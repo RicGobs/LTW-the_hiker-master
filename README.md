@@ -18,9 +18,7 @@ finally there is the img folder which contains the images locally.
 
 Git Hub by Marco Francomano: https://github.com/marcofrancomano/LTW-the_hiker-master.git
 
-//
-
-
+--------
 
 ### The Hiker Official Demo Site by Marco Francomano &amp; Riccardo Gobbato
 
