@@ -1,6 +1,6 @@
 # LTW
 
-# The Hiker Official Demo Site by Marco Francomano &amp; Riccardo Gobbato
+### The Hiker Official Demo Site by Marco Francomano &amp; Riccardo Gobbato
 
 
 Il codice è suddiviso in 5 cartelle + una che contiene le librerie e i framework esterni salvati in locale (libs).
