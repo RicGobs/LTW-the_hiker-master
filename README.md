@@ -17,3 +17,5 @@ Ogni cartella contiene una pagina html del sito, il suo foglio di stile css e i 
 -esperto contiene esperto.html(la pagina per creare i percorsi), esperto.css, esperto.js (che contiene gli script dei bottoni e lancia la richiesta per la ricerca dei comuni on change della select della regione) comuni.php (che si occupa di trovare i comuni della regione inserita lato backend, validaDati.js(che contiene le funzioni principali per validare i dati da inserire) e create.php che inserisce il percorso nel database.
 
 infine è presente la cartella img che contiene le immagini in locale.
+
+Git Hub di Marco Francomano: https://github.com/marcofrancomano/LTW-the_hiker-master.git 
