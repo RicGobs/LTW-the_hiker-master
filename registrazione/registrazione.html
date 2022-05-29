@@ -1,0 +1,128 @@
+<html> 
+    <head>
+        <title>Pagina di Registrazione</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../libs/bootstrap-5.1.3-dist/css/bootstrap.min.css"/> 
+        <link rel="stylesheet" href="signin.css"/>
+        <script src="../libs/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+        <script src="validazione.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark topnav fixed-top" id="navbar">
+            <a class="navbar-brand" href="../start/start.html"><img src="../img/home.png" width="40" height="40" class="d-inline-block align-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+        </nav>
+    
+
+
+    <section class="vh-100 obliquo">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100 alert-margin">   
+
+            <div class="alert alert-success" role="alert">
+              <h4 class="alert-heading">Informativa sulla Privacy (ART. 13 REG. UE 2016/679)</h4>
+              <p>I dati personali forniti sono necessari ai fini del funzionamento del nostro sito basato sull'interazione tra gli utenti;
+                a tal proposito si avvisa che se si intende effettuare la registrazione nella categoria "esperto",la mail utilizzata sarà
+                visibile ed utilizzabile dagli altri utenti interessati a svolgere il vostro percorso.</p>
+            </div>
+
+            <div class="col col-xl-10">
+              <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+      
+                      <form action="validateRegistration.php" class="form-signin"
+                        method="POST" name="myForm" onSubmit="return validaForm();">
+
+                        <div class="d-flex mb-3 pb-1">
+                          <i class="fas fa-cubes fa-2x me-3"></i>
+                          <span class="h1 fw-bold mb-0">Registrati in TheHiker</span>
+                        </div>
+      
+                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inserisci i dati. <b>Ricorda che la Email sarà pubblica</b> </h5>
+      
+                        <div class="form-outline mb-2">
+                          <input type="text" name="inputNome" id="nome" class="form-control form-control-lg" placeholder="Nome" required autofocus/>
+                          <label class="form-label"></label>
+                        </div>
+
+                        <div class="form-outline mb-2">
+                            <input type="text" name="inputCognome" id="cognome" class="form-control form-control-lg" placeholder="Cognome" required autofocus/>
+                            <label class="form-label"></label>
+                        </div>
+
+                        <div class="form-outline mb-2">
+                          <input type="email" name="inputEmail" id="email" class="form-control form-control-lg" placeholder="Indirizzo Email" required autofocus/>
+                          <label class="form-label" for="email"></label>
+                        </div>
+      
+                        <div class="form-outline mb-2">
+                          <input type="password" name="inputPassword" id="password" class="form-control form-control-lg" placeholder="Password" required/>
+                          <label class="form-label" for="password"></label>
+                        </div>
+                        
+                        <div class="form-outline mb-3">
+                            <label>Inserire la regione di appartenenza:</label>
+                            <select name="inputRegione" id="regione" required>
+                                <option></option>
+                                <option value="Valdaosta">Val d’Aosta</option>
+                                <option value="Piemonte">Piemonte</option>
+                                <option value="Liguria">Liguria</option>
+                                <option value="Lombardia">Lombardia</option>
+                                <option value="Veneto">Veneto</option>
+                                <option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
+                                <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
+                                <option value="Emilia-Romagna">Emilia-Romagna</option>
+                                <option value="Toscana">Toscana</option>
+                                <option value="Marche">Marche</option>
+                                <option value="Umbria">Umbria</option>
+                                <option value="Lazio">Lazio</option>
+                                <option value="Abruzzo">Abruzzo</option>
+                                <option value="Molise">Molise</option>
+                                <option value="Campania">Campania</option>
+                                <option value="Basilicata">Basilicata</option>
+                                <option value="Puglia">Puglia</option>
+                                <option value="Calabria">Calabria</option>
+                                <option value="Sicilia">Sicilia</option>
+                                <option value="Sardegna">Sardegna</option>
+                            </select>
+                        </div>
+
+                        <div  class="form-outline mb-4">
+                            <label>Inserire la categoria:</label>
+                            <select name="inputEsperto" required>
+                            <option></option>
+                            <option value="principiante">principiante</option>
+                            <option value="esperto"> esperto</option>
+                            </select>
+                        </div>
+
+                        <div class="form-outline mb-4 register-button">
+                            <button class="btn btn-our" name="registrationButton"
+                                type="submit">Registrati</button>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-5 d-none d-md-block">
+                    <img src="../img/orso.jpg"
+                      alt="login form" class="img-fluid" style="border-radius: 0 1rem 1rem 0;" />
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  transition: top 0.3s; /*per lo scroll*/
+  /*-ms-flex-align: start;*/
+}
+.topnav a {
+  /*float: left;*/
+  /*display: block;*/
+  color: #be8f47;
+  text-align: center;
+ 
+  margin-left: 10px;
+  margin-right:10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+body{
+  background-image: url("../img/sfondoLogin.jpg");
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+#contatti{
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.btn-our {
+  color: #fff;
+  background-color: #be8f47;
+  border-color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.85rem;
+  border-radius: 1rem;
+}
+
+.bar-items{
+  margin-right: 5%;
+}
+
+.register-button {
+  margin-top: 7%;
+  margin-left: 34%;
+}
+
+.alert-margin{
+  margin-top: 2%;
+}
+
+.obliquo{
+  font-style: oblique;
+}

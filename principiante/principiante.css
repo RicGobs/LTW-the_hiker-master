@@ -1,0 +1,135 @@
+body{
+    background-image: url("../img/l2.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+table {
+    border-collapse:collapse
+    }
+    td, th {
+    border:3px solid rgb(250, 247, 247);
+    padding:8px;
+       
+    }
+
+.obliquo{
+      font-style: oblique;
+}
+
+
+#titolo{
+  margin-top: 14%;
+  margin-bottom: 5%;
+}
+.testo_3dim {
+  font: bold 50px/1 Courier N MS; 
+  color: #be8f47;
+  text-shadow: 0  2px  0   #694e25,
+                     0  4px  0   #5c4521,
+                     0  6px  0   #503c1c, 
+                     0  8px  0   #433218,
+                     0 10px  0   #372913,
+                     0 12px  0   #2a1f0f,
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
+}
+#zonaDinamica{
+  margin-top: 5%;
+  margin-left: 0;
+  
+}
+
+
+
+
+    .btn-our {
+        color: #fff;
+        background-color: #be8f47;
+        border-color: #fff;
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 1rem;
+        margin-top: 3%;
+      }
+
+
+      .text-page{
+        color: white;
+        font-size: large;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bolder;
+        /*text-shadow: 2px 2px 4px white;*/
+        
+        
+    }
+    .text-page-small{
+      color: white;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    /*text-shadow: 2px 2px 4px white;*/
+      
+      
+  }
+
+    
+
+
+
+.fade-in {
+    animation: fadeIn ease 7s;
+    -webkit-animation: fadeIn ease 7s;
+    -moz-animation: fadeIn ease 7s;
+    -o-animation: fadeIn ease 7s;
+    -ms-animation: fadeIn ease 7s;
+  }
+  
+.mascotte{
+    max-width: 300px;
+    max-height: 300px;
+    margin:0 auto; /*per centrare*/
+    margin-top: 25px;
+
+}
+
+
+.foto{
+    width: 100%;
+    height: auto;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    transition: top 0.3s; /*per lo scroll*/
+    /*-ms-flex-align: start;*/
+  }
+
+
+  .topnav a {
+    /*float: left;*/
+    /*display: block;*/
+    color: #be8f47;
+    text-align: center;
+   
+    margin-left: 10px;
+    margin-right:10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  
+  #contatti{
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+  }
+
+  .bar-items{
+    margin-right: 5%;
+    
+  }

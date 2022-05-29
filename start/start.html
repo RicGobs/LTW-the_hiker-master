@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-5.1.3-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="start.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="application/javascript" src="../libs/bootstrap-5.1.3-dist/js/bootstrap.min.js">
+    </script>
+    <script src="handlers.js"> 
+    </script>
+    <script src="scroll.js"> 
+    </script>
+    
+    <script src="../libs/JQuery/jquery-3.6.0.js"></script>
+
+   
+<title>The Hiker</title>
+</head>
+<body onscroll="scrollFunction();"  onload="assegnaEventHandlers();">
+
+
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark topnav fixed-top" id="navbar" >
+        <a class="navbar-brand" href="start.html"><img src="../img/home.png" width="40" height="40" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#spiegazione" style="color: blanchedalmond;">Chi siamo</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#percorsi" style="color: blanchedalmond;">I percorsi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contatti" style="color: blanchedalmond;">Contatti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="login-btn" href="../login/login.html" style="color: blanchedalmond;">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="reg-btn" href="../registrazione/registrazione.html" style="color: blanchedalmond;">Registrazione</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="logout-btn" style="visibility: hidden;" href="../login/login.html" style="color: blanchedalmond;">Logout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="search-btn" style="visibility: hidden;" href="../principiante/principiante.html" style="color: blanchedalmond;">Cerca Percorsi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="insert-btn" style="visibility: hidden;" href="../esperto/esperto.html" style="color: blanchedalmond;">Crea un nuovo percorso</a>
+              </li>
+
+              
+             </ul>
+        </div>
+       
+    </nav>
+
+
+    
+
+
+
+    <div class="text-center welcome-sez">
+        <div id="benvenuto" class="testo_3dim">
+        <h> BENVENUTO NELLA COMMUNITY DEGLI ESCURSIONISTI!</h>
+        </div>
+    </div>
+    <script language="Javascript" type="text/javascript">
+      var secondi=2; //onload già occupata
+      var num=0;
+      function CambiaImmagine2() {
+        var immagini=new Array();
+        immagini[0]="../img/collina.jpg";
+        immagini[1]="../img/canyon.jpg";
+        immagini[2]="../img/i3.jpg";
+        immagini[3]="../img/i1.jpg";
+        immagini[4]="../img/i2.jpg";
+        
+        document.getElementsByClassName("welcome-sez")[0].style.backgroundImage = "url("+immagini[num]+")";
+        num=(num+1>=immagini.length)?0:num+1;
+        setTimeout("CambiaImmagine2()",secondi*1000);
+      }	
+      CambiaImmagine2();
+      </script>
+   
+
+
+    <!--PANORAMICA-->
+    <div class="container fade-in" id="spiegazione">
+            <div class="container text-center">
+              <span class="txt anim-text-flow" style="font-size:xx-large">CHI SIAMO</span>
+            </div>
+            <br>
+            <div class ="flexbox">
+              <div class="cell">
+                <p>
+                Scopri i migliori percorsi di trekking ed escursionismo creati dalle nostre guide e dai nostri esperti.
+                </p>
+                <img src="../img/logo3.png" width="22%" class="large" >
+                <img src="../img/logo4.png" width="22%" class="large"  >
+                <img src="../img/logo5.png" width="20%">
+              </div> 
+              <div class="cell sfumato" id="foto-sfumata">
+                  <img src="../img/escursione-marmo.gif" class="foto">
+              </div>
+        </div>
+    </div>
+        <div class="container fade-in">
+               <p>
+                Un buon metodo per approcciarsi la prima volta al mondo delle escursioni o per approfondire aspetti specifici per chi è già un escursionista esperto.
+                <br>
+                Se sei un amante dell'ambiente iscriviti e cerca i migliori percorsi per le tue esigenze e fantasie.
+                <br>
+                Se sei una guida migliora le tue competenze e iscriviti al sito per poter comunicare a tutti le tue avventure e la gioia di vivere la montagna, la collina e il nostro intero mondo.
+                <br>
+                <br>
+                Siamo amanti e promotori delle bellezze italiane. Dall'attività in giornata al viaggio di più giorni. Che tu voglia riscoprire il tuo territorio, o esplorare nuovi posti in compagnia, con noi avrai l'imbarazzo della scelta.
+                </p>
+          </div>
+
+          <br>
+    <!-- portfolio section-->
+    <section id="portfolio">
+      <div class="container mt-3 ">
+        <div class="container text-center">
+          <span class="txt anim-text-flow" style="font-size:xx-large">I NOSTRI E I VOSTRI SERVIZI</span>
+        </div>
+            <div class="row" id="card-container">
+              <div class="col-lg-4 mt-4">
+                  <div class="card">
+                      <img class="card-img-top" src="../img/card1.jpg" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                          <h4 class="card-title">Principiante</h4>
+                          <p class="card-text">Cerca i percorsi creati dalla nostra community </p>
+                          <div class="text-center">
+                            <button onclick="window.location.href='../principiante/principiante.html'" class="btn btn-our" id="bottone-principiante" >CERCA</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                  <div class="card">
+                      <img class="card-img-top" src="../img/card2.jpg" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                          <h4 class="card-title">Esperto</h4>
+                          <p class="card-text">Inserisci dei percorsi emozionanti per grandi e piccini</p>
+                          <div class="text-center">
+                              <!--a href="../esperto/esperto.html" class="btn btn-our" id="bottone-esperto">INSERISCI</a-->
+                              <button onclick="window.location.href='../esperto/esperto.html'" class="btn btn-our" id="bottone-esperto" >INSERISCI</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="../img/panda2.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Registrazione</h4>
+                        <p class="card-text">Entra a far parte di una grande famiglia per vivere emozioni uniche</p>
+                        <div class="text-center">
+                          <button onclick="window.location.href='../registrazione/registrazione.html'" class="btn btn-our" id="bottone-registrazione" >UNISCITI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+            </div>
+        </div>
+    </section>
+
+    <div class="container text-center altezza-percorsi">
+      <span class="txt anim-text-flow" style="font-size:xx-large">I NOSTRI PERCORSI</span>
+    </div>
+    <!--I PERCORSI-->
+    <div class="zona-testo container" id="percorsi">
+        <div class="container text-center">
+          <span class="txt2" style="font-size:xx-large">Tocca le nostre mascotte per scoprire i 5 livelli di difficoltà:</span>
+        </div>
+        <ul>
+            <br>
+            <li id="primotesto" style="visibility:hidden">
+                <span>T</span> = Turistico: itinerario su sentieri comodi, stradine o mulattiere ben tracciate, 
+                solitamente al di sotto dei 2000 m di altezza, 
+                che non richiede particolare esperienza o preparazione fisica.
+            </li>
+            <br>
+            <img src="../img/T.png" width="100" height="100" onmouseenter="scopri(primotesto)" class="simboli">
+            <br>
+            <li id="secondotesto" style="visibility:hidden">
+                <span>E</span> = Escursionistico: itinerario su sentieri o tracce di 
+                passaggio ben visibili su terreni vari (pascoli, detriti, pietraie, ghiaioni), generalmente segnalato. Sono necessari 
+                una certa esperienza e conoscenza del territorio montagnoso, allenamento alla camminata e un equipaggiamento adeguato.
+            </li>
+            <br>
+            <img src="../img/E.png" width="100" height="100" onmouseenter="scopri(secondotesto)" class="simboli">
+            <br>
+            <li id="terzotesto" style="visibility:hidden">
+                <span>EE</span> = per Escursionisti Esperti: itinerario non sempre segnalato, 
+                che richiede una buona preparazione e capacità di muoversi su terreni di montagna di vario tipo, 
+                come tratti impervi o infidi, tratti rocciosi con lievi difficoltà tecniche (es. tratti attrezzati), 
+                pendii ripidi e scivolosi.
+            </li>
+            <br>
+            <img src="../img/EE.png" width="100" height="100" onmouseenter="scopri(terzotesto)" class="simboli">
+            <br>
+            <li id="quartotesto" style="visibility:hidden">
+                <span>EEA</span> = per Escursionisti Esperti con Attrezzatura (via ferrata): 
+                itinerario che richiede l’uso di attrezzatura da ferrata.
+            </li>
+            <br>
+            <img src="../img/q.png" width="100" height="100" onmouseenter="scopri(quartotesto)" class="simboli">
+            <br>
+            <li id="quintotesto" style="visibility:hidden">
+                <span>EAI</span> = Escursionismo in Ambiente Innevato: itinerario in ambiente innevato, 
+                con percorsi evidenti, poco esposti e senza grandi pendenze e per cui è necessario 
+                l’utilizzo di racchette da neve.
+            </li>
+            <br>
+            <img src="../img/EAI.png" width="100" height="100" onmouseenter="scopri(quintotesto)" class="simboli">
+
+
+        </ul>
+    </div>
+
+
+    <!--CONTATTI-->
+  <footer>
+    <div class="grid2 text-center" id="contatti">
+        <div style="color: blanchedalmond;" id="riga1">
+            <h2>CONTATTI:</h2>
+        </div>
+        <div style="color: blanchedalmond;" id="riga2">
+            <a id="mail" href="mailto:ithehiker@gmail.com">ithehiker@gmail.com</a> 
+
+            
+            
+        </div>
+        <div id="riga4">
+            <a class="bar-items bar-facebook" href="https://www.facebook.com/profile.php?id=100080923877828" style="color: #333;"><img src="../img/logo-facebook.png" alt="profilo_facebook" width="70" height="70"/> </a>
+            <a class="bar-items" href="https://www.instagram.com/hiker_mountain_/"  style="color: #333;"><img src="../img/logo-insta.png" alt="profilo_insta" width="65" height="65"/> </a>
+            <a class="bar-items" href="https://twitter.com/ThehikerMount"><img src="../img/logo-twitter.png" alt="profilo_twitter" width="80" height="80"/> </a>            
+        </div>
+    </div>
+    </footer>
+    
+
+   
+
+
+    <!--ALTRI SCRIPT-->
+
+
+    
+  
+      <script>
+        function scopri(tmp){
+          tmp.style.visibility='visible';
+        }
+      </script>
+       
+        
+      <script>
+        $(document).ready(function(){
+            if(sessionStorage.email!=undefined && sessionStorage.email!=NaN ){
+                document.getElementById("logout-btn").style.visibility="visible";
+                document.getElementById("logout-btn").style.color="blanchedalmond";
+                document.getElementById("login-btn").style.visibility="hidden";
+                document.getElementById("reg-btn").style.visibility="hidden";
+                }
+            if(sessionStorage.categoria=="principiante"){
+                document.getElementById("search-btn").style.visibility="visible";
+                document.getElementById("search-btn").style.color="blanchedalmond";
+                document.getElementById("bottone-esperto").disabled=true;
+                document.getElementById("bottone-registrazione").disabled=true;
+                
+            }
+            if(sessionStorage.categoria=="esperto"){
+                document.getElementById("insert-btn").style.visibility="visible";
+                document.getElementById("insert-btn").style.color="blanchedalmond";                
+                document.getElementById("search-btn").style.visibility="visible";
+                document.getElementById("search-btn").style.color="blanchedalmond";                
+                document.getElementById("bottone-registrazione").disabled=true;
+            }
+            
+ 
+            
+            });
+      </script>
+
+      <script> //SCRITTA COLORATA
+        $('.txt').html(function(i, html) {
+        var chars = $.trim(html).split("");
+
+        return '<span>' + chars.join('</span><span>') + '</span>';
+        });
+      </script>
+        
+
+  
+</body>
+</html>
