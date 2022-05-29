@@ -1,6 +1,6 @@
 # LTW-the_hiker-master
 
-### The Hiker Official Demo Site by Marco Francomano &amp; Riccardo Gobbato
+### The Hiker Demo del sito ufficiale di Marco Francomano &amp; Riccardo Gobbato
 
 The code is divided into 5 folders + one that contains the libraries and external frameworks saved locally (libs). Each folder contains an html page of the site, its css style sheet and the various javascript and php scripts linked to that page.
 
@@ -18,7 +18,7 @@ finally there is the img folder which contains the images locally.
 
 Git Hub by Marco Francomano: https://github.com/marcofrancomano/LTW-the_hiker-master.git
 
-
+//
 
 
 
