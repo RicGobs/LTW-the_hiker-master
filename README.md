@@ -1,4 +1,4 @@
-# LTW-the_hiker-master
+# LTW-THE HIKER MASTER
 
 ### The Hiker Official Demo Site by Marco Francomano &amp; Riccardo Gobbato
 
